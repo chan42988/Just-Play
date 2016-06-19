@@ -1,0 +1,14 @@
+<table>
+    <tr>
+      <th>Address</th>
+      <th>Latitude</th>
+      <th>Longitude</th>
+    </tr>
+  <% for location in @location %>
+    <tr>
+      <td><%= location.address %></td>
+      <td><%= location.latitude %></td>
+      <td><%= location.longitude %></td>
+    </tr>
+  <% end %>
+</table>

@@ -2,6 +2,10 @@ source 'https://rubygems.org'
 
 gem 'bootstrap-sass', '~> 2.3.1.0'
 
+gem 'geokit-rails'
+
+gem	'geokit'
+
 gem 'geocoder'
 
 gem 'gmaps4rails'

@@ -1,0 +1,15 @@
+<div class="lcontainer">
+
+<br><br>
+
+	<%= form_for :location, url: '/locations' do |location| %>
+
+  Address: <%= location.text_field :address %>
+  Latitude: <%= location.text_field :latitude %>
+  Longitude: <%= location.text_field :longitude %><br><br>
+
+  <%= location.submit "Fetch Coordinates" %>
+
+<% end %>
+
+</div>
