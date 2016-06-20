@@ -4,8 +4,8 @@
 
 	<%= form_for :location, url: '/locations' do |location| %>
 
-  Address: <%= location.text_field :address %>
-  Latitude: <%= location.text_field :latitude %>
+  Address: <%= location.text_field :address %><br>
+  Latitude: <%= location.text_field :latitude %><br>
   Longitude: <%= location.text_field :longitude %><br><br>
 
   <%= location.submit "Fetch Coordinates" %>

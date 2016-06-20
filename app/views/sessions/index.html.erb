@@ -1,0 +1,15 @@
+<div class="ipcontainer">
+
+<br><br>
+
+	<%= form_for :user, url: '/users' do |user| %>
+
+  IP Address: <%= user.text_field :ip_address %><br>
+  Latitude: <%= user.text_field :latitude %><br>
+  Longitude: <%= user.text_field :longitude %><br><br>
+
+  <%= user.submit "Fetch Coordinates" %>
+
+<% end %>
+
+</div>

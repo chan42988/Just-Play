@@ -1,16 +1,17 @@
-<h1>Signup</h1><br>
+<div id="scenter">
+	<h1>Signup</h1><br>
 
-<%= image_tag("intense1.jpg") %><br><br>
+	<%= form_for :user, url: '/users' do |f| %>
 
-<%= form_for :user, url: '/users' do |f| %>
+	  Name: <%= f.text_field :username %><br>
+	  Email: <%= f.text_field :email %><br>
+	  Password: <%= f.password_field :password %><br>
+	  Password Confirmation: <%= f.password_field :password_confirmation %><br><br>
+	  <%= f.submit "Submit" %><br>
 
-  Name: <%= f.text_field :username %>
-  Email: <%= f.text_field :email %>
-  Password: <%= f.password_field :password %>
-  Password Confirmation: <%= f.password_field :password_confirmation %>
-  <%= f.submit "Submit" %>
+	<% end %>
+</div>
 
-<% end %>
 
 
 

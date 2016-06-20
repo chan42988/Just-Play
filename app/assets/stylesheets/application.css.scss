@@ -1,5 +1,12 @@
 @import "bootstrap";
 
+/*@media all
+	and (max-width: 667px) { 
+		.container {
+			display: none;
+	}
+}*/
+
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
@@ -18,3 +25,4 @@
  @import "users.css.scss";
  @import "sessions.css.scss";
  @import "locations.css.scss";
+ @import "matches.css.scss";
