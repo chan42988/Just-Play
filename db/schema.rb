@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160620184820) do
+ActiveRecord::Schema.define(version: 20160621201118) do
 
   create_table "locations", force: :cascade do |t|
     t.string   "address"
@@ -46,6 +46,7 @@ ActiveRecord::Schema.define(version: 20160620184820) do
     t.datetime "updated_at",      null: false
     t.float    "latitude"
     t.float    "longitude"
+    t.string   "ip"
   end
 
 end
