@@ -1,18 +1,22 @@
 class LocationsController < ApplicationController
 
   def index
-    if params[:search].present?
-      @locations = Location.near(params[:search], 50, :order => :distance)
-    else
-      @locations = Location.all
-    end
+    # if params[:search].present?
+    #   @locations = Location.near(params[:search], 50, :order => :distance)
+    # else
+    #   @locations = Location.all
+    # end
   end
 
   def show
     @location = Location.find(params[:id])
   end
 
-  def new
+  def new_address
+    @location = Location.new
+  end
+
+  def new_ip
     @location = Location.new
   end
 
