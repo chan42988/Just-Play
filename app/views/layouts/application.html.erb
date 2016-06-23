@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Pickupgame2</title>
+  <title>JustPlay</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -12,8 +12,8 @@
   Signed in as <%= current_user.username %> | 
   	<%= link_to 'Home', '/' %> |
     <%= link_to "Play Now", '/locations/new' %> |
-    <%= link_to "Your Account", '/locations/80' %> |
-    <%= link_to "Logout", '/logout' %> | 
+    <%= link_to "Nearby Players", '/locations/80' %> |
+    <%= link_to "Logout", '/logout' %> 
 <% else %>
   <%= link_to 'Home', '/' %> | 
   <%= link_to 'Signup', '/users/new' %> |
