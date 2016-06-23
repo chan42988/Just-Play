@@ -1,15 +1,23 @@
-<div class="lcontainer">
+<div id="PUG">
 
-<br><br>
+	<br><br><%= image_tag("intense1.jpg") %><br><hr>
 
-	<%= form_for :location, url: '/locations' do |location| %>
+		<%= form_for :location, url: '/locations' do |location| %>
 
-  Address: <%= location.text_field :address %><br>
-  Latitude: <%= location.text_field :latitude %><br>
-  Longitude: <%= location.text_field :longitude %><br><br>
+		  <%=location.select :sport, options_for_select([["Select sport", ""], "Tennis", "Basketball"]) %><br>
+			<%=location.select :position, options_for_select([["Select position", ""], "PG", "SG", "SF", "PF", "C"]) %>
+			<%=location.select :position2, options_for_select([["Select position", ""], "PG", "SG", "SF", "PF", "C"]) %>
+			<%= location.hidden_field :user_id, value:current_user.id%><br><br>
+						
+		  Zipcode/IPAddress: <%= location.text_field :address %><br>
+			<p>or</p>
+		  Latitude: <%= location.text_field :latitude %><br>
+		  Longitude: <%= location.text_field :longitude %><br><br>
 
-  <%= location.submit "Fetch Coordinates" %>
+		  <%=location.submit "Game On", class: "Game-on" %>
 
-<% end %>
+		<% end %>
 
-</div>
+	<hr><%= image_tag("intense2.jpg") %>
+
+</div><br><br>

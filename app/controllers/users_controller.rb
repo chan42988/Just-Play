@@ -3,6 +3,11 @@ class UsersController < ApplicationController
   end
 
   def index
+    if params[:search].present?
+      @locations = Location.near(params[:search], 50, :order => :distance)
+    else
+      @locations = Location.all
+    end
   end
 
   def show
@@ -21,6 +26,6 @@ class UsersController < ApplicationController
   private
 
   def user_params
-    params.require(:user).permit(:username, :email, :password, :password_confirmation, :ip)
+    params.require(:user).permit(:username, :email, :password, :password_confirmation, :ip, :latitude, :longitude)
   end
 end

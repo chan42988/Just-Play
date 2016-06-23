@@ -12,14 +12,6 @@ class LocationsController < ApplicationController
     @location = Location.find(params[:id])
   end
 
-  def new_address
-    @location = Location.new
-  end
-
-  def new_ip
-    @location = Location.new
-  end
-
   def create
     @location = Location.new(location_params)
     if @location.save
@@ -32,7 +24,7 @@ class LocationsController < ApplicationController
   private
 
   def location_params
-    params.require(:location).permit(:address, :latitude, :longitude)
+    params.require(:location).permit(:address, :latitude, :longitude, :ip)
   end
 
 end

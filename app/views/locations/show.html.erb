@@ -1,13 +1,21 @@
-<p>
-	<strong>Address:</strong>
-	<%= @location.address %>
-</p>
-<p>
-	<strong>Latitude:</strong>
-	<%= @location.latitude %>
-</p>
-<p>
-	<strong>Longitude:</strong>
-	<%= @location.longitude %>
-</p>
+<div id="show">
 
+	<br><br><p>
+		<strong>IP Address and Address:</strong>
+		<%= @location.address %>
+	</p>
+	<p>
+		<strong>Latitude:</strong>
+		<%= @location.latitude %>
+	</p>
+	<p>
+		<strong>Longitude:</strong>
+		<%= @location.longitude %>
+	</p><hr>
+
+	<h3>Nearby Players</h3>
+	<% for location in @location.nearbys(5) %>
+	  <ul><%= link_to location.address, location %> (<%= location.distance.round(2) %> miles)</ul>
+	<% end %>
+
+</div>

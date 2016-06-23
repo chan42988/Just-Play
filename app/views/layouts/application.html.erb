@@ -11,9 +11,9 @@
 <% if current_user %>
   Signed in as <%= current_user.username %> | 
   	<%= link_to 'Home', '/' %> |
-    <%= link_to 'Play Now', '/matches/new' %> |
-    <%= link_to "Logout", '/logout' %> |
-    <%= link_to "Location", '/locations/new' %> 
+    <%= link_to "Play Now", '/locations/new' %> |
+    <%= link_to "Your Account", '/locations/80' %> |
+    <%= link_to "Logout", '/logout' %> | 
 <% else %>
   <%= link_to 'Home', '/' %> | 
   <%= link_to 'Signup', '/users/new' %> |
@@ -23,11 +23,4 @@
 <%= yield %>
 
 </body>
-
-<div class="container">
-	<ul class="nav nav-tabs">
-	
-	</ul>
-</div>
-
 </html>
