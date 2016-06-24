@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+# ActionController::Routing::Routes.draw do |map|
 
   root 'users#index'
 
@@ -7,6 +8,10 @@ Rails.application.routes.draw do
   get '/logout' => 'sessions#destroy'
 
   resources :users, :locations, :matches
+
+  # => { :complete => :put }
+
+  # map.resources :tasks, :collection => { :complete => :put }
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -62,4 +67,5 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+  # end
 end

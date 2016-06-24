@@ -1,21 +1,20 @@
 <div id="PUG">
 
-	<br><%= image_tag("intense1.jpg") %><br><hr>
+	<div id="mike">
+	<%= image_tag("intense1.jpg") %>
+	</div><hr>
 
 		<%= form_for :location, url: '/locations' do |location| %>
 
-		  <%=location.select :sport, options_for_select([["Select sport", ""], "Tennis", "Basketball"]) %><br>
+		  <%=location.select :sport, options_for_select([["Select sport", ""], "Tennis", "Basketball", "Sumo Wrestling", "Running"]) %><br><br>
 			<%=location.select :position, options_for_select([["Select position", ""], "PG", "SG", "SF", "PF", "C"]) %>
 			<%=location.select :position2, options_for_select([["Select position", ""], "PG", "SG", "SF", "PF", "C"]) %>
 			<%= location.hidden_field :user_id, value:current_user.id%><hr>
 						
-		  Zip code/IP Address: <%= location.text_field :address %><br>
-			<p>or</p>
-		  Latitude: <%= location.text_field :latitude %><br>
-		  Longitude: <%= location.text_field :longitude %><br><br>
+		  Zip code/IP Address: <%= location.text_field :address %><br><br><br>
 
 		  <%=location.submit "Game On", class: "Game-on" %>
 
 		<% end %>
 
-</div><br><br>
+</div>

@@ -31,7 +31,7 @@ $main-color: #8c7373;
 	text-align: center;
 	color: white;
 	background-color: #4dd2ff;
-
+	font-size: 18px;
 	height: 202px;
 	width: 480px;
 	position: relative;
@@ -48,32 +48,5 @@ $main-color: #8c7373;
   
   position: relative;
   bottom: 30px;
-  left: 14em;
+  left: 15em;
 }
-
-/*.arrow-down {
-  width: 0; 
-  height: 0; 
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent;
-  
-  border-top: 20px solid #f00;
-}*/
-
-/*.arrow-right {
-  width: 0; 
-  height: 0; 
-  border-top: 60px solid transparent;
-  border-bottom: 60px solid transparent;
- 
-  border-left: 60px solid green;
-}
-
-.arrow-left {
-  width: 0; 
-  height: 0; 
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent; 
-  
-  border-right:10px solid blue; 
-}*/

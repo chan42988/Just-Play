@@ -1,13 +1,21 @@
 <div id="show">
+	<div id="sumo">
+		<%= image_tag("intense2.jpg") %>
+	</div><hr>
 
-	<br><%= image_tag("intense2.jpg") %><hr>
+	<%= form_for :user, url: '/users' do |f| %>
 
-		<h3>Nearby Players</h3>
+		<h3>Nearby Players</h3><br>
 			<% for location in @location.nearbys(5) %>
-			  <ul><%= link_to location.address, location %> (<%= location.distance.round(2) %> miles)</ul>
-		<% end %><hr>
+			  <ul> <%=  link_to location.address, location %> (<%= location.distance.round(2) %> miles) <input type="checkbox"> </ul>
+		<% end %><br>
 
-		<p>
+		<%= f.submit "Add to Chatroom" %><br>
+	<% end %><br>
+
+		<!-- <hr> -->
+
+		<!-- <p>
 			<strong>Zip Code/IP Address:</strong>
 			<%= @location.address %>
 		</p>
@@ -18,6 +26,6 @@
 		<p>
 			<strong>Longitude:</strong>
 			<%= @location.longitude %>
-		</p>
+		</p> -->
 
 </div>

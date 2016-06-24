@@ -1,0 +1,96 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+$main-color: #8c7373;
+
+/*@media all
+	and (max-width: 667px) { 
+		.container {
+			display: none;
+	}
+}*/
+
+.container-fluid {
+	color: white;
+}
+
+#PUG {
+	text-align: center;
+}
+
+#links {
+	font-size: 1.4em;
+}
+
+#scenter {
+ text-align: center;
+}
+
+#mainp {
+	text-align: center;
+}
+
+#maini {
+	background-color: black;
+	width: 700px;
+	top: -3em;
+	left: -9em;
+	position: relative;
+
+	img{
+		width: 700px;
+	}
+}
+
+#bbox {
+	text-align: center;
+	color: white;
+	background-color: #4dd2ff;
+	font-size: 16px;
+	height: 202px;
+	width: 480px;
+	position: relative;
+	top: -76px;
+}
+
+.arrow-up {
+  width: 0; 
+  height: 0; 
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  
+  border-bottom: 30px solid #4dd2ff;
+  
+  position: relative;
+  bottom: 76px;
+  left: 15em;
+}
+
+/*locations*/
+
+#mike {
+		top: 10em;
+	img{
+		top: 10em;
+		height: 145px;
+	}
+}
+
+#PUG {
+	text-align: center;
+}
+
+#sumo {
+	img{
+		height: 150px;
+	}
+}
+
+#show {
+	text-align: center;
+}
+
+/*sessions */
+#lcenter {
+ text-align: center;
+}

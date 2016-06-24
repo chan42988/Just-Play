@@ -21,6 +21,10 @@ class LocationsController < ApplicationController
     end
   end
 
+  def complete
+    # redirect_to location_path
+  end
+
   private
 
   def location_params
