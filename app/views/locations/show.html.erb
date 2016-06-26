@@ -3,11 +3,17 @@
 		<%= image_tag("intense2.jpg") %>
 	</div><hr>
 
-	<%= form_for :user, url: '/users' do |f| %>
+	<%= form_for :match, url: '/matches' do |f| %>
 
 		<h3>Nearby Players</h3><br>
 			<% for location in @location.nearbys(5) %>
-			  <ul> <%=  link_to location.address, location %> (<%= location.distance.round(2) %> miles) <input type="checkbox"> </ul>
+
+			  <ul> <%= link_to location.username, location %> (<%= location.distance.round(2) %> miles) 
+			  <input name="location.address" type="hidden" value="0" />
+			  <input type="checkbox" id="location.address" name="location.address" value="1" /> <!-- <input type="checkbox"> --> </ul>
+
+			  <!-- f.checkbox "Jon", :match , value: 1 -->
+			  <!-- 	x = params[:match][:user5] -->
 		<% end %><br>
 
 		<%= f.submit "Add to Chatroom" %><br>

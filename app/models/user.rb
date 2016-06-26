@@ -3,6 +3,7 @@ class User < ActiveRecord::Base
 	has_secure_password
 	has_one :ip_address
 	has_many :locations
+	has_many :matches
 
 	# def first_ip
 	# 	first_ip_address = ip_addresses.first

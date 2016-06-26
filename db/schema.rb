@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160622174107) do
+ActiveRecord::Schema.define(version: 20160625224427) do
 
   create_table "locations", force: :cascade do |t|
     t.string   "address"
@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 20160622174107) do
     t.datetime "updated_at", null: false
     t.integer  "user_id"
     t.string   "ip"
+    t.string   "username"
   end
 
   create_table "matches", force: :cascade do |t|

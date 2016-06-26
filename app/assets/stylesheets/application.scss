@@ -11,7 +11,10 @@ $main-color: #8c7373;
 }*/
 
 .container-fluid {
+	background-color: #e3f2fd;
 	color: white;
+	text-align: center;
+	font-size: 16px;
 }
 
 #PUG {
@@ -23,7 +26,7 @@ $main-color: #8c7373;
 }
 
 #scenter {
- text-align: center;
+ 	text-align: center;
 }
 
 #mainp {
@@ -32,13 +35,12 @@ $main-color: #8c7373;
 
 #maini {
 	background-color: black;
-	width: 700px;
-	top: -3em;
-	left: -9em;
+	/*width: 200px;*/
+	top: -22px;
+	left: -118px;
 	position: relative;
-
 	img{
-		width: 700px;
+		height: 360px;
 	}
 }
 
@@ -47,10 +49,10 @@ $main-color: #8c7373;
 	color: white;
 	background-color: #4dd2ff;
 	font-size: 16px;
-	height: 202px;
-	width: 480px;
+	height: 332px;
+	width: 414px;
 	position: relative;
-	top: -76px;
+	top: -52px;
 }
 
 .arrow-up {
@@ -62,17 +64,17 @@ $main-color: #8c7373;
   border-bottom: 30px solid #4dd2ff;
   
   position: relative;
-  bottom: 76px;
-  left: 15em;
+  bottom: 51px;
+  left: 13em;
 }
 
 /*locations*/
 
 #mike {
-		top: 10em;
+	position: relative;
+	bottom: 20px;
 	img{
-		top: 10em;
-		height: 145px;
+		width: 100%;
 	}
 }
 
@@ -81,8 +83,10 @@ $main-color: #8c7373;
 }
 
 #sumo {
+	position: relative;
+	bottom: 20px;
 	img{
-		height: 150px;
+		width: 100%;
 	}
 }
 

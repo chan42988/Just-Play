@@ -2,19 +2,21 @@
 <html>
 <head>
   <title>JustPlay</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
-<nav class="navbar navbar-inverse">
+<nav class="navbar navbar-light">
   <div class="container-fluid">
     <% if current_user %>
-      Signed in as <%= current_user.username %> | 
+      <!-- Signed in as <%= current_user.username %> |  -->
       	<%= link_to 'Home', '/' %> |
         <%= link_to "Play Now", '/locations/new' %> |
-        <%= link_to "Nearby Players", '/locations/95' %> |
+        <%= link_to "Nearby Players", '/locations/110' %> |
+        <%= link_to "Chat", '/matches' %> |
         <%= link_to "Logout", '/logout' %> 
     <% else %>
       <%= link_to 'Home', '/' %> | 
