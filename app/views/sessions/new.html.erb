@@ -1,13 +1,12 @@
 <div id="lcenter">
-	<h1>Login</h1><br>
-	
+	<br><h1>Login</h1><br>
 
 	<%= form_tag '/login' do %>
 
-	  Email: <%= text_field_tag :email %><br>
-	  Password: <%= password_field_tag :password
+	  Email:<br> <%= text_field_tag :email %><br><br>
+	  Password:<br> <%= password_field_tag :password
 	   %>
-	  <%= hidden_field :ip, :value => request.remote_ip %><br><br>
+	  <%= hidden_field :ip, :value => request.remote_ip %><br><br><br>
 	  <%= submit_tag "Submit" %>
 
 	<% end %>

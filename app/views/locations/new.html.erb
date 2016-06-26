@@ -2,20 +2,22 @@
 
 	<div id="mike">
 	<%= image_tag("intense1.jpg") %>
-	</div><hr>
+	</div><br><br>
 
-		<%= form_for :location, url: '/locations' do |location| %>
+		<div id="words1">
+			<%= form_for :location, url: '/locations' do |location| %>
 
-		  <%=location.select :sport, options_for_select([["Select sport", ""], "Tennis", "Basketball", "Sumo Wrestling", "Running"]) %><br><br>
-			<%=location.select :position, options_for_select([["Select position", ""], "PG", "SG", "SF", "PF", "C"]) %>
-			<%=location.select :position2, options_for_select([["Select position", ""], "PG", "SG", "SF", "PF", "C"]) %>
-			<%= location.hidden_field :user_id, value:current_user.id%>
-			<%= location.hidden_field :username, value:current_user.username%><hr>
-						
-		  Zip code/IP Address: <%= location.text_field :address %><br><br><br>
+			  <%=location.select :sport, options_for_select([["Select sport", ""], "Tennis", "Basketball", "Sumo Wrestling", "Running"]) %><br>
+				<%=location.select :position, options_for_select([["Select position", ""], "PG", "SG", "SF", "PF", "C"]) %><br>
+				<%=location.select :position2, options_for_select([["Select position", ""], "PG", "SG", "SF", "PF", "C"]) %>
+				<%= location.hidden_field :user_id, value:current_user.id%>
+				<%= location.hidden_field :username, value:current_user.username%><br><br><br><br>
+							
+			  Zip code/IP Address:<br><br><%= location.text_field :address %><br><br><br>
 
-		  <%=location.submit "Game On", class: "Game-on" %>
+			  <%=location.submit "Game On", class: "Game-on" %>
 
-		<% end %>
+			<% end %>
+		</div>
 
 </div>
