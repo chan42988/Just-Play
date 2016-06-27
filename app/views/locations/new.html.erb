@@ -7,7 +7,7 @@
 		<div id="words1">
 			<%= form_for :location, url: '/locations' do |location| %>
 				<div id="ss">
-			  <%=location.select :sport, options_for_select([["Select sport", ""], "Tennis", "Basketball", "Sumo Wrestling", "Running"]) %><br><br>
+			  <%=location.select :sport, options_for_select([["Select sport", ""], "Tennis", "Basketball", "Sumo Wrestling", "Running"]) %>
 			  </div>
 			  <div id="sp">
 				<%=location.select :position, options_for_select([["Select position", ""], "PG", "SG", "SF", "PF", "C"]) %>
@@ -17,10 +17,12 @@
 				</div>
 				<%= location.hidden_field :user_id, value:current_user.id%>
 				<%= location.hidden_field :username, value:current_user.username%><br><br>
-							
-			  Zip code/IP Address:<br><br><%= location.text_field :address %><br><br><br>
+						
+			  Zip code/IP Address:<br><%= location.text_field :address %><br><br><br>
 			  <div id="nbutton">
+			  <button type="button3" class="btn btn-default btn-lg">
 			  <%=location.submit "Game On", class: "Game-on" %>
+			  </button>
 			  </div>
 			<% end %>
 		</div>
