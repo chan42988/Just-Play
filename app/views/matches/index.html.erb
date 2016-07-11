@@ -1,0 +1,16 @@
+<div id="girl">
+	<%= image_tag("intense3.jpg") %>
+</div>
+
+<div id="cbox">
+			<%= form_for :match, url: '/users' do |match| %>
+			<!-- <p>
+				User1.<br> 
+				User2.<br> 
+				User3.
+			</p> -->
+		<div id="submit">
+			<button type="button3" class="btn btn-default btn-lg"><%=match.submit "End Session", class: "End Session" %></button>
+		<% end %>
+		</div>
+</div>

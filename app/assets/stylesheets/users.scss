@@ -1,0 +1,52 @@
+$main-color: #8c7373;
+
+#PUG {
+	text-align: center;
+}
+
+#links {
+	font-size: 1.4em;
+}
+
+#scenter {
+ text-align: center;
+}
+
+#mainp {
+	text-align: center;
+}
+
+#maini {
+	background-color: black;
+	width: 700px;
+	left: -9em;
+	position: relative;
+
+	img{
+		width: 700px;
+	}
+}
+
+#bbox {
+	text-align: center;
+	color: white;
+	background-color: #4dd2ff;
+	font-size: 18px;
+	height: 202px;
+	width: 480px;
+	position: relative;
+	top: -30px;
+}
+
+.arrow-up {
+  width: 0; 
+  height: 0; 
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  
+  border-bottom: 30px solid #4dd2ff;
+  
+  position: relative;
+  bottom: 30px;
+  left: 15em;
+}

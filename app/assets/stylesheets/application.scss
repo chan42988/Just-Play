@@ -1,0 +1,175 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@font-face {
+	font-family: "PremierLeaguewithLionNumbers";
+	src: url(/assets/PremierLeaguewithLionNumbers.ttf) format("truetype");
+}
+@font-face {
+	font-family: "NikeCombatStencil";
+	src: url(/assets/NikeCombatStencil.ttf) format("truetype");
+}
+
+$main-color: #8c7373;
+
+/*@media all
+	and (max-width: 667px) { 
+		.container {
+			display: none;
+	}
+}*/
+
+body {
+	height: 736px;
+	font-family: "PremierLeaguewithLionNumbers";
+}
+
+h1 {
+	font-family: "NikeCombatStencil";
+	font-size: 66px;
+}
+
+#loginb {
+}
+
+.container-fluid {
+	color: black;
+	text-align: center;
+	font-size: 24px;
+}
+
+#links {
+	font-size: 1.4em;
+}
+
+#scenter {
+ 	text-align: center;
+}
+
+#mainp {
+	text-align: center;
+}
+
+#maini {
+	background-color: black;
+	/*width: 200px;*/
+	top: -22px;
+	left: -118px;
+	position: relative;
+	img{
+		height: 360px;
+	}
+}
+
+#bbox {
+	text-align: center;
+	color: white;
+	background-color: #4dd2ff;
+	font-size: 22px;
+	height: 332px;
+	width: 414px;
+	position: relative;
+	top: -52px;
+}
+
+.arrow-up {
+  width: 0; 
+  height: 0; 
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 30px solid #4dd2ff;
+  position: relative;
+  bottom: 51px;
+  left: 13em;
+}
+
+/*locations*/
+
+#mike {
+	position: relative;
+	right: 110px;
+	bottom: 22px;
+	img{
+		height: 200px;
+	}
+}
+
+.dropdown1 {
+	position: relative;
+	left: 158px;
+	font-size: 20px;
+}
+
+.dropdown-menu {
+	font-size: 24px;
+}
+
+#words1 {
+	text-align: center;
+	font-size: 20px;
+}
+
+#sp {
+}
+
+#ss {
+	position: relative;
+	left: 5px;
+}
+
+#nbutton {
+	position: relative;
+	right: 8px;
+	top: 30px;
+}
+
+#PUG {
+}
+
+#sumo {
+	position: relative;
+	bottom: 20px;
+	right: 100px;
+	img{
+		height: 199px;
+	}
+}
+
+#add {
+}
+
+#words2 {
+	font-size: 18px;
+	text-align: center;
+}
+
+#show {
+	text-align: center;
+}
+
+/*sessions */
+#lcenter {
+ text-align: center;
+}
+
+#girl {
+	position: relative;
+	bottom: 20px;
+	right: 112px;
+	img{
+		height: 199px;
+	}
+}
+
+#cbox {
+	font-size: 22px;
+	/*height: 332px;
+	width: 414px;
+	position: relative;
+	top: 52px;*/
+}
+
+#submit {
+	position: relative;
+	top: 376px;
+	text-align: center;
+}
