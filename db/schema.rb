@@ -1,4 +1,3 @@
-# encoding: UTF-8
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -11,7 +10,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160625224427) do
+ActiveRecord::Schema.define(version: 20160730052733) do
+
+  create_table "chats", force: :cascade do |t|
+    t.string   "title"
+    t.text     "body"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "comments", force: :cascade do |t|
+    t.integer  "chat_id"
+    t.text     "body"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["chat_id"], name: "index_comments_on_chat_id"
+  end
 
   create_table "locations", force: :cascade do |t|
     t.string   "address"
@@ -34,16 +48,6 @@ ActiveRecord::Schema.define(version: 20160625224427) do
     t.string   "position2"
   end
 
-<<<<<<< HEAD
-=======
-  create_table "plays", force: :cascade do |t|
-    t.string   "name"
-    t.integer  "user_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
->>>>>>> 2c76005de50f58b91026563306704e5cf8c09fd2
   create_table "users", force: :cascade do |t|
     t.string   "username"
     t.string   "email"

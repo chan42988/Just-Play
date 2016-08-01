@@ -2,7 +2,7 @@
 
 	<div id="mike">
 	<%= image_tag("intense1.jpg") %>
-	</div><br>
+	</div>
 
 </div><br><br>
 
@@ -16,29 +16,18 @@
 
 				  <div id="sp">
 					<%=location.select :position, options_for_select([["2. Select position", ""], "PG", "SG", "SF", "PF", "C"]) %>
-				  <%=location.select :sport, options_for_select([["Select sport", ""], "Tennis", "Basketball", "Sumo Wrestling", "Running"]), class: "dropdown-menu" %>
 				  </div>
-
-				  <div id="sp">
-					<%=location.select :position, options_for_select([["Select position", ""], "PG", "SG", "SF", "PF", "C"]) %>
-					</div>
 
 					<div id="spn">
 					<%=location.select :position2, options_for_select([["Select position", ""], "PG", "SG", "SF", "PF", "C"]) %>
 					</div><br>
 				</div>
-
-				<%= location.hidden_field :user_id, value:current_user.id%>
-				<%= location.hidden_field :username, value:current_user.username%>
 					
 				<div class="form-group"></div>		
 			  	3. Zip code/IP Address:<br><%= location.text_field :address, class: "form-control" %><br><br><br>
 			
 				<%= location.hidden_field :user_id, value:current_user.id%>
-				<%= location.hidden_field :username, value:current_user.username%><br><br>
-					
-				<div class="form-group"></div>		
-			  Zip code/IP Address:<br><%= location.text_field :address, class: "form-control" %><br><br><br>
+				<%= location.hidden_field :username, value:current_user.username%>
 
 			  <div id="nbutton">
 				  <button type="button3" class="btn btn-default btn-lg">

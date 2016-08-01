@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<div id="girl">
+	<%= image_tag("intense3.jpg") %>
+</div>
+
+<!-- <p>
+  <strong>Title:</strong>
+  <%= @chat.title %>
+</p>
+
+<p>
+  <strong>Body:</strong>
+  <%= @chat.body %>
+</p>
+
+<%= link_to 'Edit', edit_chat_path(@chat) %> |
+<%= link_to 'Back', chats_path %>
+
+<br><br> -->
+
+<h2>Comments</h2>
+
+	<div id="comments">
+		<%# Expands to render partial: 'comments/comment', collection: @chat.comments %>
+		<%= render @chat.comments %>
+	</div>
+
+	<%= render 'comments/new', chat: @chat %>
+</div>

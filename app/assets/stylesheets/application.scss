@@ -50,7 +50,7 @@ h1 {
 }
 
 #maini {
-	background-color: black;
+	/*background-color: black;*/
 	/*width: 200px;*/
 	top: -22px;
 	left: -118px;
@@ -90,6 +90,7 @@ h1 {
 	bottom: 22px;
 	img{
 		height: 200px;
+		width: 523px;
 	}
 }
 
@@ -119,11 +120,6 @@ h1 {
 }
 
 #spn {
-}
-
-#ss {
-	position: relative;
-	left: 5px;
 }
 
 #nbutton {
@@ -170,6 +166,10 @@ h1 {
 	}
 }
 
+#chat {
+	text-align: center;
+}
+
 #cbox {
 	font-size: 22px;
 	/*height: 332px;
@@ -178,8 +178,25 @@ h1 {
 	top: 52px;*/
 }
 
+#box {
+    background-color: #F2F2F2;
+    width: 367px;
+    height: 260px;
+    border: 1px solid black;
+    padding: 25px;
+    margin: 25px;
+}
+
+#chbox {
+    background-color: #F2F2F2;
+    width: 367px;
+    height: 60px;
+    border: 1px solid black;
+    padding: 25px;
+    margin: 25px;
+}
+
 #submit {
 	position: relative;
-	top: 376px;
 	text-align: center;
 }

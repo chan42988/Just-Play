@@ -16,5 +16,8 @@ class MatchesController < ApplicationController
           redirect_to '/locations'
         end
   end
+
+  def destroy
+  end
   
 end

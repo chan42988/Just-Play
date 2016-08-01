@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
 # ActionController::Routing::Routes.draw do |map|
 
+  resources :chats do
+    resources :comments
+  end
+
   root 'users#index'
 
   get '/login' => 'sessions#new'
