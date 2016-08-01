@@ -1,5 +1,5 @@
 <%= form_for([ @chat, Comment.new ], remote: true) do |form| %>
 	Your comment:<br>
-	<%= form.text_area :body, size: '50x20' %><br>
+	<%= form.text_area :body, size: '40x10' %><br><br>
 	<%= form.submit %>
 <% end %>

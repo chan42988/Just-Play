@@ -11,15 +11,15 @@
 
 $main-color: #8c7373;
 
-/*@media all
-	and (max-width: 667px) { 
+@media all
+	and (min-width: 415px) { 
 		.container {
 			display: none;
 	}
-}*/
+}
 
 body {
-	height: 736px;
+	height: 7px;
 	font-family: "PremierLeaguewithLionNumbers";
 }
 
@@ -28,7 +28,13 @@ h1 {
 	font-size: 66px;
 }
 
-#loginb {
+#navbar.navbar-default {
+	width: 414px;
+	height: 50px;
+}
+
+.container {
+	height: 736px;
 }
 
 .container-fluid {
@@ -41,10 +47,6 @@ h1 {
 	font-size: 1.4em;
 }
 
-#scenter {
- 	text-align: center;
-}
-
 #mainp {
 	text-align: center;
 }
@@ -53,7 +55,7 @@ h1 {
 	/*background-color: black;*/
 	/*width: 200px;*/
 	top: -22px;
-	left: -118px;
+	left: -134px;
 	position: relative;
 	img{
 		height: 360px;
@@ -65,10 +67,11 @@ h1 {
 	color: white;
 	background-color: #4dd2ff;
 	font-size: 22px;
-	height: 332px;
+	height: 326px;
 	width: 414px;
 	position: relative;
 	top: -52px;
+	right: 15px;
 }
 
 .arrow-up {
@@ -85,9 +88,10 @@ h1 {
 /*locations*/
 
 #mike {
+	text-align: center;
 	position: relative;
 	right: 110px;
-	bottom: 22px;
+	bottom: 20px;
 	img{
 		height: 200px;
 		width: 523px;
@@ -154,7 +158,7 @@ h1 {
 
 /*sessions */
 #lcenter {
- text-align: center;
+ 	text-align: center;
 }
 
 #girl {
