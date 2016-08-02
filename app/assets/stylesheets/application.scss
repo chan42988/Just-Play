@@ -34,13 +34,17 @@ h1 {
 }
 
 .container {
-	height: 736px;
+	height: 600px;
 }
 
 .container-fluid {
 	color: black;
 	text-align: center;
 	font-size: 24px;
+}
+
+#scenter {
+	text-align: center;
 }
 
 #links {
@@ -96,6 +100,10 @@ h1 {
 		height: 200px;
 		width: 523px;
 	}
+}
+
+.container {
+	height: 600px;
 }
 
 .dropdown1 {
@@ -163,7 +171,7 @@ h1 {
 
 #girl {
 	position: relative;
-	bottom: 20px;
+	bottom: 30px;
 	right: 112px;
 	img{
 		height: 199px;
@@ -172,6 +180,8 @@ h1 {
 
 #chat {
 	text-align: center;
+	position: relative;
+	bottom: 15px;
 }
 
 #cbox {

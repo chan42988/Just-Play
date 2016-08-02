@@ -1,32 +1,36 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
 
-<div id="girl">
-	<%= image_tag("intense3.jpg") %>
-</div>
+	<p id="notice"><%= notice %></p>
 
-<!-- <p>
-  <strong>Title:</strong>
-  <%= @chat.title %>
-</p>
-
-<p>
-  <strong>Body:</strong>
-  <%= @chat.body %>
-</p>
-
-<%= link_to 'Edit', edit_chat_path(@chat) %> |
-<%= link_to 'Back', chats_path %>
-
-<br><br> -->
-
-<div id="chat">
-	<h2>Chat Room</h2>
-
-		<div id="comments">
-			<%# Expands to render partial: 'comments/comment', collection: @chat.comments %>
-			<%= render @chat.comments %>
-		</div>
-
-		<%= render 'comments/new', chat: @chat %>
+	<div id="girl">
+		<%= image_tag("intense3.jpg") %>
 	</div>
+
+	<!-- <p>
+	  <strong>Title:</strong>
+	  <%= @chat.title %>
+	</p>
+
+	<p>
+	  <strong>Body:</strong>
+	  <%= @chat.body %>
+	</p>
+
+	<%= link_to 'Edit', edit_chat_path(@chat) %> |
+	<%= link_to 'Back', chats_path %>
+
+	<br><br> -->
+
+	<div id="chat">
+		<h2>Chat</h2><br>
+
+			<div id="comments">
+				<%# Expands to render partial: 'comments/comment', collection: @chat.comments %>
+				<%= render @chat.comments %>
+			</div><br>
+
+			<%= render 'comments/new', chat: @chat %>
+		</div><br>
+	</div>
+
 </div>
