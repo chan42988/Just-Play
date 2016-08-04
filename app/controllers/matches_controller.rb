@@ -11,7 +11,7 @@ class MatchesController < ApplicationController
   		@match = Match.new
         if @match.save
           session[:match_id] = @match.id
-          redirect_to '/chats/2'
+          redirect_to '/chats/1'
         else
           redirect_to '/locations'
         end
