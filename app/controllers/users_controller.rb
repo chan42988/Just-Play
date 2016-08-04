@@ -17,7 +17,7 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
       @user.ip = request.remote_ip
       if @user.save
-      redirect_to '/'
+      redirect_to '/locations/new'
     else
       redirect_to '/'
     end
